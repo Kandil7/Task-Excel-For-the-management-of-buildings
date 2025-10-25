@@ -124,7 +124,8 @@ class TestSetCellStyle:
 
         set_cell_style(cell, bg_color="FF0000")
 
-        assert cell.fill.start_color.rgb == "FF0000"
+        # openpyxl uses ARGB format (includes alpha channel)
+        assert cell.fill.start_color.rgb == "00FF0000"
 
 
 class TestGenerateExcel:
@@ -270,8 +271,8 @@ class TestCreateSheets:
         create_rents_sheet(wb, rents)
 
         sheet = wb['الإيجارات']
-        # Check that unpaid rent row is highlighted
-        assert sheet['A2'].fill.start_color.rgb == "FFC7CE"
+        # Check that unpaid rent row is highlighted (openpyxl uses ARGB format)
+        assert sheet['A2'].fill.start_color.rgb == "00FFC7CE"
 
 
 if __name__ == '__main__':
