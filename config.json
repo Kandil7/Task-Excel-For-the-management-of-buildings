@@ -1,0 +1,115 @@
+{
+  "output_filename": "إدارة عمارات سكنية.xlsx",
+  "buildings": [
+    {
+      "name": "عمارة أ",
+      "units": 5,
+      "notes": ""
+    },
+    {
+      "name": "عمارة ب",
+      "units": 14,
+      "notes": ""
+    }
+  ],
+  "units": [
+    {
+      "unit_no": "101",
+      "building": "عمارة أ",
+      "type": "استديو",
+      "rent": 2000,
+      "status": "مُؤجّرة",
+      "notes": ""
+    },
+    {
+      "unit_no": "102",
+      "building": "عمارة أ",
+      "type": "شقة غرفة وصالة",
+      "rent": 3500,
+      "status": "شاغرة",
+      "notes": "تحتاج إلى صيانة"
+    },
+    {
+      "unit_no": "201",
+      "building": "عمارة ب",
+      "type": "شقة غرفتين وصالة",
+      "rent": 4500,
+      "status": "مُؤجّرة",
+      "notes": ""
+    }
+  ],
+  "tenants": [
+    {
+      "unit_no": "101",
+      "name": "محمد أحمد",
+      "id": "1234567890",
+      "mobile": "05xxxxxxxx",
+      "start_date": "2024-01-01",
+      "end_date": "2024-12-31",
+      "rent": 2000,
+      "email": "mohamed@example.com",
+      "notes": ""
+    },
+    {
+      "unit_no": "102",
+      "name": "سارة خالد",
+      "id": "9876543210",
+      "mobile": "05xxxxxxxx",
+      "start_date": "2024-02-15",
+      "end_date": "2025-02-14",
+      "rent": 3500,
+      "email": "sara@example.com",
+      "notes": ""
+    }
+  ],
+  "rents_paid": [
+    {
+      "unit_no": "101",
+      "month": "يناير",
+      "year": 2024,
+      "amount": 2000,
+      "date": "2024-01-05",
+      "method": "تحويل بنكي",
+      "status": "مدفوع",
+      "notes": ""
+    },
+    {
+      "unit_no": "102",
+      "month": "فبراير",
+      "year": 2024,
+      "amount": 3500,
+      "date": "2024-02-10",
+      "method": "نقداً",
+      "status": "مدفوع",
+      "notes": ""
+    },
+    {
+      "unit_no": "101",
+      "month": "فبراير",
+      "year": 2024,
+      "amount": 2000,
+      "date": null,
+      "method": "",
+      "status": "غير مدفوع",
+      "notes": ""
+    }
+  ],
+  "expenses": [
+    {
+      "building": "عمارة أ",
+      "date": "2024-01-01",
+      "type": "فاتورة كهرباء",
+      "amount": 500,
+      "category": "فواتير",
+      "notes": ""
+    },
+    {
+      "building": "عمارة ب",
+      "date": "2024-01-15",
+      "type": "صيانة",
+      "amount": 200,
+      "category": "صيانة",
+      "notes": "صيانة مصعد"
+    }
+  ]
+}
